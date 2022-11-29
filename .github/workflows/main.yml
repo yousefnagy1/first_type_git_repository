@@ -18,3 +18,9 @@ jops:
 
       - name: "login to Docker hub"
         run: docker login --username ${{ secrets.DOCKER_REPOSTORY }} --password ${{ secrets.DOCKER_LOGIN }}
+
+      - name: "Bulding docker image"
+        run: docker build -t ${{ secrets.DOCKER_REPOSTORY }}/myimage .
+
+      - name: "pushing to docker hup"
+        run: docker push ${{ secrets.DOCKER_REPOSTORY }}/myimage
