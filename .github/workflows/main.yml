@@ -20,4 +20,6 @@ jobs:
 
       - name: 'After' 
         run: ls
-      
+        
+      - name: "login to Docker hub"
+        run: docker login --username yousefnagy1 --passworddckr_pat_sqvSv2_uVdNgcJt5ZPJuWodkmjs
