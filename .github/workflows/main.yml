@@ -13,8 +13,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'Testing Github action' 
-        run: pwd
-
-      - name: 'Testing Printing'
-        run: echo Yousef
+      - name: 'Printing folder contents' 
+        run: ls
